@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+    <link rel="stylesheet" href="./src/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./src/styles/exercise3.css">
+</head>
+
+<body>
+    <div class="big-container">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control js_name" placeholder="Name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control js_lastname" placeholder="Last name">
+                    </div>
+
+                    <div class="w-100 my-2"></div>
+
+                    <div class="col">
+                        <input type="text" class="form-control js_age" placeholder="Age">
+                    </div>
+                    <div class="col">
+                        <select class="custom-select">
+                            <option selected disabled>Gender</option>
+                            <option value="1">Man</option>
+                            <option value="2">Female</option>
+                            <option value="3">Others</option>
+                        </select>
+                    </div>
+
+                    <div class="w-100 my-2"></div>
+
+                    <div class="col">
+                        <select class="col custom-select" multiple>
+                            <option selected disabled>Favorite food</option>
+                            <option value="1">Ceviche</option>
+                            <option value="2">Lasagna</option>
+                            <option value="3">Matasca</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <select class="col custom-select">
+                            <option selected disabled>Country</option>
+                            <option value="1">Peru</option>
+                            <option value="2">Chile</option>
+                            <option value="3">Argentina</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-4 text-center">
+                <button type="button" class="btn btn-outline-primary col-8 js_sendButton">Send</button>
+            </div>
+        </form>
+        <div class="js_newContent"></div>
+    </div>
+
+
+</body>
+
+<script src="src/scripts/exercise3.js"></script>
+
+
+</html>
