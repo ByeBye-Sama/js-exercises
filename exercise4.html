@@ -10,23 +10,23 @@
     <link rel="stylesheet" href="./src/styles/exercise4.css">
 </head>
 
-<body>
+<body class="body">
     <div class="big-container">
         <form>
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <select class="custom-select">
+                        <select class="custom-select js_htmlTag">
                             <option selected disabled>Element to create</option>
-                            <option value="1">div</option>
-                            <option value="2">h1</option>
-                            <option value="3">p</option>
-                            <option value="2">ul</option>
-                            <option value="3">li</option>
+                            <option value="div">div</option>
+                            <option value="h1">h1</option>
+                            <option value="p">p</option>
+                            <option value="ul">ul</option>
+                            <option value="li">li</option>
                         </select>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Element class name">
+                        <input type="text" class="form-control js_classInside" placeholder="Element class name">
                     </div>
 
                     <div class="w-100 my-2"></div>
@@ -35,17 +35,17 @@
                         <input type="text" class="form-control js_textInside" placeholder="Text inside">
                     </div>
                     <div class="col">
-                        <select class="custom-select">
-                            <option selected disabled>Insert inside</option>
-                            <option value="1">main</option>
-                            <option value="2"></option>
+                        <select class="custom-select js_selectElement">
+                            <option selected disabled value="body">Insert inside: body</option>
+                           
+
                         </select>
                     </div>
 
                     <div class="w-100 my-2"></div>
 
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Element style">
+                        <input type="text" class="form-control js_styleInside" placeholder="Element style ex.color:red; background:black;">
                     </div>
 
                 </div>
