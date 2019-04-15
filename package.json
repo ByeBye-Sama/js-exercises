@@ -1,0 +1,26 @@
+{
+  "name": "5js-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/scripts -d babel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ByeBye-Sama/js-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ByeBye-Sama/js-exercises/issues"
+  },
+  "homepage": "https://github.com/ByeBye-Sama/js-exercises#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.3",
+    "@babel/preset-env": "^7.4.3"
+  }
+}
