@@ -7,27 +7,32 @@ function getInfo() {
     let sendButton = document.querySelector(".js_sendButton");
     sendButton.addEventListener("click", function (e) {
         e.preventDefault();
-        /*get value & create html */
+        /* get value & create html */
         let htmlTag = document.querySelector(".js_htmlTag").value
         let newHtml = document.createElement(htmlTag);
-        /*get value & write a text*/
+        /* get value & write a text */
         let textInside = document.querySelector(".js_textInside").value;
         let text = document.createTextNode(textInside);
-        /*get value & set a class */
+        /* get value & set a class */
         let classInside = document.querySelector(".js_classInside").value;
         newHtml.setAttribute("class", classInside);
-        /*get value & set a style */
+        /* get value & set a style */
         let styleInside = document.querySelector(".js_styleInside").value;
         newHtml.setAttribute("style", styleInside);
 
-        /*insert the text and html inside selected class */
+        /* insert the text and html inside selected class */
         let insideTag = document.querySelector(".js_selectElement").value;
         newHtml.appendChild(text);
-        document.querySelector(`.${insideTag}`).appendChild(newHtml);
+        /*document.querySelector(`.${insideTag}`).appendChild(newHtml);*/
+        /* insert html in all classes with the same name (not working) */
+        let insideAll = document.querySelector(`.${insideTag}`)
+        for (let i = 0; i < insideAll.length; i += 1) {
+            insideAll[i].appendChild(newHtml);
+        }
 
-        /*add class to selector as an option*/
+        /* add class to selector as an option */
         let typeElement = document.createElement("option");
-
+        /* insert only elements diferent on the selector (not working) */
         if (classInside !== insideTag) {
             typeElement.setAttribute("value", classInside);
             let textElement = document.createTextNode(classInside);
